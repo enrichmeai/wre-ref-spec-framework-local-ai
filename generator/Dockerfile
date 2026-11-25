@@ -1,6 +1,6 @@
 # The generator: a JDK, Maven, the framework and the service template, with every dependency fetched at build time,
 # so the Job builds generated code offline inside the cluster.
-FROM maven:3.10.2-eclipse-temurin-21
+FROM maven:3-eclipse-temurin-26
 WORKDIR /work
 COPY framework framework
 COPY services services
