@@ -1,0 +1,12 @@
+wre-ref-spec-framework-local-ai
+Copyright 2026 Joseph Antony Aruja and contributors. Licensed under the Apache License, Version 2.0 (LICENSE).
+
+This repository contains no model weights and no third-party binaries. The scripts download them, check
+their published SHA-256, and build them into local images. Their own licences apply:
+
+- Qwen3-4B-Instruct-2507 (the default) and Qwen3-1.7B (used in the experiments), quantised to GGUF and
+  published on Docker Hub as ai/qwen3: Apache License 2.0. The 4B file's own metadata states
+  general.license = apache-2.0; for both, Qwen's README says "All our open-weight models are licensed under
+  Apache 2.0." https://github.com/QwenLM/Qwen3
+- Ollama (the model runtime): MIT License. https://github.com/ollama/ollama
+- Spring Boot, ArchUnit, Maven: Apache License 2.0.

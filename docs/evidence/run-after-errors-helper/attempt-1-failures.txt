@@ -1,0 +1,11 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[4,41] package com.enrichmeai.ref.shipping.model does not exist
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[10,25] cannot find symbol
+  symbol:   method unknownZone(java.lang.String,java.lang.String)
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[31,29] cannot find symbol
+  symbol:   method unknownZone(java.lang.String,java.lang.String)
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[4,41] package com.enrichmeai.ref.shipping.model does not exist
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[10,25] cannot find symbol
+[ERROR]   symbol:   method unknownZone(java.lang.String,java.lang.String)
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[31,29] cannot find symbol
+[ERROR]   symbol:   method unknownZone(java.lang.String,java.lang.String)

@@ -1,0 +1,17 @@
+# The model, baked into an image: at build time Ollama imports the GGUF into its own store,
+# so a pod starts with the model already present and needs no network at runtime.
+# Build context: the folder scripts/fetch-model.sh filled, e.g. .work/model/4b-instruct-2507-q4_K_M
+#   docker build -f model-runtime/Dockerfile.model --build-arg GGUF=Qwen3-4B-Instruct-2507-Q4_K_M.gguf -t wre/model:4b .work/model/4b-instruct-2507-q4_K_M
+ARG RUNTIME=wre/ollama-cpu:0.40.18
+FROM ${RUNTIME} AS import
+ARG GGUF
+COPY ${GGUF} /import/model.gguf
+COPY Modelfile /import/Modelfile
+RUN OLLAMA_MODELS=/models sh -c 'ollama serve >/tmp/serve.log 2>&1 & \
+    for i in $(seq 1 30); do ollama list >/dev/null 2>&1 && break; sleep 1; done; \
+    ollama create local-model -f /import/Modelfile && ollama list'
+
+# Only Ollama's store is kept: the GGUF copy above stays in the discarded stage.
+FROM ${RUNTIME}
+COPY --from=import /models /models
+ENV OLLAMA_MODELS=/models

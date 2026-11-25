@@ -1,0 +1,5 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[12,9] illegal start of expression
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[37,1] class, interface, enum, or record expected
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[12,9] illegal start of expression
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[37,1] class, interface, enum, or record expected

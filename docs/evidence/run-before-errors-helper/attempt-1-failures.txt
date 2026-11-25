@@ -1,0 +1,19 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[9,39] cannot find symbol
+  symbol:   variable HttpStatus
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[9,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[14,39] cannot find symbol
+  symbol:   variable HttpStatus
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[14,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[33,43] cannot find symbol
+  symbol:   variable HttpStatus
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[33,23] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[9,39] cannot find symbol
+[ERROR]   symbol:   variable HttpStatus
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[9,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[14,39] cannot find symbol
+[ERROR]   symbol:   variable HttpStatus
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[14,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[33,43] cannot find symbol
+[ERROR]   symbol:   variable HttpStatus
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[33,23] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated

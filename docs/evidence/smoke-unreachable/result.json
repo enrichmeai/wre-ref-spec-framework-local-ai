@@ -1,0 +1,1 @@
+{"runId":"smoke-unreachable","model":"local-model","temperature":0.0,"seed":1,"attempts":[{"error":"model not reachable: java.net.ConnectException"}],"passed":false,"exit":2}

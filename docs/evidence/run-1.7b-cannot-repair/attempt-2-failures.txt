@@ -1,0 +1,7 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[13,41] boolean cannot be dereferenced
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[35,25] cannot find symbol
+  symbol:   method builder()
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[13,41] boolean cannot be dereferenced
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[35,25] cannot find symbol
+[ERROR]   symbol:   method builder()

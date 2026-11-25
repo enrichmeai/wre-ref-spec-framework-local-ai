@@ -1,0 +1,4 @@
+Failing tests (each is an acceptance criterion in the spec):
+FAILED zeroKilosIs422:  Expecting actual:   "{"detail":"Weight must be between 1 and 30 kg","status":422,"title":"Unprocessable Content","code":"WEIGHT_LIMIT"}" to contain:   "INVALID_WEIGHT" 
+[ERROR] Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.430 s <<< FAILURE! -- in com.enrichmeai.ref.shipping.ShippingQuoteSpecTest
+[ERROR] Tests run: 7, Failures: 1, Errors: 0, Skipped: 0

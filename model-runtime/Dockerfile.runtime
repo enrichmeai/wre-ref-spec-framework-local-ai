@@ -1,0 +1,11 @@
+# The model runtime, CPU only: Ollama's release binary and its CPU libraries, without the GPU libraries.
+# Build context: the extracted release (scripts/fetch-ollama.sh puts it in .work/ollama).
+# Measured: about 168 MB of layers (amd64); `docker images` showed 227 MB with the containerd image store. The official ollama/ollama image is a 3.2 GiB compressed download for amd64,
+# because it carries the CUDA, Vulkan and MLX libraries; ROCm is its separate -rocm tag.
+FROM debian:bookworm-slim
+COPY bin/ollama /usr/bin/ollama
+COPY lib/ollama /usr/lib/ollama
+ENV OLLAMA_HOST=0.0.0.0:11434
+EXPOSE 11434
+ENTRYPOINT ["/usr/bin/ollama"]
+CMD ["serve"]

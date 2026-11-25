@@ -1,0 +1,16 @@
+# The same model on a GPU node. Needs the vendor's GPU drivers and device plugin on the node
+# (https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/). Not run in this repository's checks.
+# The base sets imagePullPolicy: Never; on a real cluster push the image to a registry and change that.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../base
+patches:
+  - target: {kind: Deployment, name: model}
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: wre/model-gpu:4b           # Dockerfile.model built with RUNTIME=ollama/ollama:0.40.18 (it carries the GPU libraries)
+      - op: add
+        path: /spec/template/spec/containers/0/resources/limits/nvidia.com~1gpu
+        value: 1                          # GPUs go in limits only; the limit is also the request

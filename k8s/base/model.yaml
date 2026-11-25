@@ -1,0 +1,45 @@
+# The model runtime: Ollama with the model baked into the image (model-runtime/Dockerfile.model).
+# CPU only, sized for a laptop: a 4B model at 4-bit needs about 2.5 GB for the weights plus room for the context.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model
+  namespace: wre-local-ai
+  labels: {app: model}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: model}
+  template:
+    metadata:
+      labels: {app: model}
+    spec:
+      containers:
+        - name: ollama
+          image: wre/model:4b             # built locally and loaded with `minikube image load`
+          imagePullPolicy: Never          # never pull: the image exists only in this cluster
+          ports:
+            - containerPort: 11434
+          env:
+            - {name: OLLAMA_KEEP_ALIVE, value: "30m"}   # keep the model in memory between requests
+          resources:
+            requests: {cpu: "2", memory: 4Gi}
+            limits: {memory: 6Gi}
+          startupProbe:                   # the server is up; the model itself loads on the first request (the generator allows for it)
+            httpGet: {path: /api/tags, port: 11434}
+            periodSeconds: 10
+            failureThreshold: 30
+          readinessProbe:
+            httpGet: {path: /api/tags, port: 11434}
+            periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: model
+  namespace: wre-local-ai
+spec:
+  selector: {app: model}
+  ports:
+    - port: 11434
+      targetPort: 11434

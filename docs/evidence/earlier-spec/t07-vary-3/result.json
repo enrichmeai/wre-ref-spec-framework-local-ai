@@ -1,0 +1,1 @@
+{"runId":"t07-vary-3","model":"local-model","temperature":0.7,"seed":3,"attempts":[{"promptTokens":869,"outputTokens":209,"modelSeconds":27.3,"sha256":"54c4b9247587d5b2fd3b9549cb016508f2da6208590a4d5b939817548054ff5e","buildSeconds":8.6,"passed":true}],"passed":true,"exit":0}

@@ -1,0 +1,16 @@
+# Upgrades are the part to automate completely: the framework's Spring Boot parent and the build plugins.
+# Services follow by bumping one parent version (see docs/upgrades.md).
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/framework/platform-parent"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "docker"
+    directories: ["/model-runtime", "/generator"]
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"

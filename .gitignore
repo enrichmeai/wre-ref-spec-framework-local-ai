@@ -1,0 +1,6 @@
+.work/
+target/
+runs/
+# the slot the model fills; a run copies it into runs/<id>/
+services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java
+__pycache__/

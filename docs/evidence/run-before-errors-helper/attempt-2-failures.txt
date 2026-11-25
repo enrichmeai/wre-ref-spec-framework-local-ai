@@ -1,0 +1,7 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[10,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[15,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[34,23] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[10,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[15,19] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated
+[ERROR] services/shipping-quote/src/main/java/com/enrichmeai/ref/shipping/ShippingQuoteService.java:[34,23] com.enrichmeai.ref.platform.DomainException is abstract; cannot be instantiated

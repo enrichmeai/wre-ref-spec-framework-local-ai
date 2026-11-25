@@ -1,0 +1,14 @@
+package com.enrichmeai.ref.shipping;
+
+import com.enrichmeai.ref.platform.Errors;
+import java.util.Locale;
+import org.springframework.stereotype.Service;
+
+/** Generated from specs/001-shipping-quote/spec.md: the template is the framework's, the method body is the model's. */
+@Service
+public class ShippingQuoteService {
+
+    public Quote quote(String zone, int weightKg) {
+        // SLOT: quote
+    }
+}

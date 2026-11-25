@@ -1,0 +1,1 @@
+{"runId":"t0-fixed-3","model":"local-model","temperature":0.0,"seed":1,"attempts":[{"promptTokens":869,"outputTokens":175,"modelSeconds":25.4,"sha256":"4414526957c987f8ea3fe24144dc781ab6f66c5e98b06811ceb3f368525a8a14","buildSeconds":8.1,"passed":true}],"passed":true,"exit":0}

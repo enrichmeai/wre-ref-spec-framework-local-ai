@@ -1,0 +1,1 @@
+{"runId":"warm-t07-vary-5","model":"local-model","temperature":0.7,"seed":5,"attempts":[{"promptTokens":926,"outputTokens":211,"modelSeconds":34.0,"sha256":"ea7db718ed81a27b8a6498e422136b94a2dd61113fdab4f85b89cdf49de7a964","buildSeconds":9.3,"passed":true}],"passed":true,"exit":0}

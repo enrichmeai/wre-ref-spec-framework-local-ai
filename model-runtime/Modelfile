@@ -1,0 +1,2 @@
+FROM /import/model.gguf
+PARAMETER num_ctx 8192

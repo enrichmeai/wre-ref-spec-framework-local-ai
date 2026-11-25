@@ -1,0 +1,1 @@
+{"runId":"small-t0-fixed-5","model":"local-model","temperature":0.0,"seed":1,"attempts":[{"promptTokens":873,"outputTokens":258,"modelSeconds":19.0,"sha256":"039a8727aa0366afff82fa3eb9e20cf603883573e3c56cdf20a4d3e4fb12177c","buildSeconds":2.4,"passed":false}],"passed":false,"exit":1}

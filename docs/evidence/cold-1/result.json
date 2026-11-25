@@ -1,0 +1,1 @@
+{"runId":"cold-1","model":"local-model","temperature":0.0,"seed":1,"attempts":[{"promptTokens":926,"outputTokens":207,"modelSeconds":51.6,"sha256":"a6f8d86a11ce7fb553f1084b5dc2586cbadc6f93b760b8832b423a3d266e2850","buildSeconds":9.5,"passed":true}],"passed":true,"exit":0}

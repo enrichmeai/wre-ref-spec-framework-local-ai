@@ -1,0 +1,21 @@
+# One generation run: spec + framework context -> the model -> one slot -> the service's own build decides.
+# The Job succeeds only if the generated service passes its acceptance tests and the platform rules.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: generate-shipping-quote
+  namespace: wre-local-ai
+spec:
+  backoffLimit: 0                         # the generator already retries with feedback; a failed run stays failed
+  ttlSecondsAfterFinished: 3600
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: generator
+          image: wre/generator:0.1.0
+          imagePullPolicy: Never
+          args: ["--ollama-url", "http://model:11434", "--run-id", "in-cluster", "--attempts", "3"]
+          resources:
+            requests: {cpu: "1", memory: 1Gi}
+            limits: {memory: 2Gi}

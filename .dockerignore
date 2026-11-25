@@ -1,0 +1,6 @@
+# The generator image needs the framework, the service, the specs and the generator; never the downloads or build output.
+.work/
+**/target/
+runs/
+docs/
+.git/
